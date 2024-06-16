@@ -1,0 +1,21 @@
+version: '3.6'
+services:
+  valheim-server-mistlands:
+    container_name: valheim-server-mistlands
+    cap_add:
+      - sys_nice
+    stop_grace_period: 120s
+    ports:
+      - 2456-2457:2456-2457/udp
+    volumes:
+      - $HOME/servers/valheim/config:/config
+      - $HOME/servers/valheim/data:/opt/valheim
+    environment:
+      - SERVER_NAME=Mistlands
+      - WORLD_NAME=Mistlands
+      - SERVER_PASS=qwerty
+      - BACKUPS_MAX_COUNT=10
+    image: ghcr.io/lloesche/valheim-server
+networks:
+  default:
+    name: valheim-network-mistlands

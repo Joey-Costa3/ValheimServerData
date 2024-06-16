@@ -1,0 +1,22 @@
+version: '3.6'
+services:
+  valheim-server-solo:
+    container_name: valheim-server-solo
+    cap_add:
+      - sys_nice
+    stop_grace_period: 120s
+    ports:
+      - 2466-2467:2466-2467/udp
+    volumes:
+      - $HOME/servers/valheim/config:/config
+      - $HOME/servers/valheim/data:/opt/valheim
+    environment:
+      - SERVER_NAME=CostaDelSolo
+      - WORLD_NAME=Dedicated
+      - SERVER_PASS=costa3
+      - BACKUPS_MAX_COUNT=10
+      - SERVER_PORT=2466
+    image: ghcr.io/lloesche/valheim-server
+networks:
+  default:
+    name: valheim-network-solo

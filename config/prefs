@@ -1,9 +1,12 @@
 <unity_prefs version_major="1" version_minor="1">
 	<pref name="AntiAliasing" type="int">1</pref>
+	<pref name="AttackTowardsPlayerLookDir" type="int">0</pref>
 	<pref name="Bloom" type="int">1</pref>
 	<pref name="ChromaticAberration" type="int">1</pref>
 	<pref name="ClutterQuality" type="int">3</pref>
+	<pref name="ConsoleBindings" type="string"></pref>
 	<pref name="DOF" type="int">1</pref>
+	<pref name="DetailedParticleSystems" type="int">1</pref>
 	<pref name="DistantShadows" type="int">1</pref>
 	<pref name="FPSLimit" type="int">-1</pref>
 	<pref name="GraphicsQualityMode" type="int">100</pref>
@@ -19,6 +22,6 @@
 	<pref name="SunShafts" type="int">1</pref>
 	<pref name="Tesselation" type="int">1</pref>
 	<pref name="VSync" type="int">0</pref>
-	<pref name="unity.player_session_count" type="string">NjI=</pref>
-	<pref name="unity.player_sessionid" type="string">NjQ2NDI3OTQ3NTE3MjkxMjY5Mw==</pref>
+	<pref name="unity.player_session_count" type="string">NjY=</pref>
+	<pref name="unity.player_sessionid" type="string">NjkxNTUzMDY1MjcxMDk3MDI4Nw==</pref>
 </unity_prefs>
