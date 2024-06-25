@@ -15,6 +15,7 @@ services:
       - WORLD_NAME=Mistlands
       - SERVER_PASS=qwerty
       - BACKUPS_MAX_COUNT=10
+      - SERVER_ARGS=-crossplay
     image: ghcr.io/lloesche/valheim-server
 networks:
   default:
